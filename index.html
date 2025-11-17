@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMR 287 Jakarta</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white shadow-md z-40">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="logo.png" alt="Logo PMR" class="h-10 w-10 mr-3">
+        <h1 class="text-xl font-bold text-red-600">PMR 287 Jakarta</h1>
+      </div>
+      <button id="darkModeToggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700">
+        <i class="fas fa-moon dark:hidden"></i>
+        <i class="fas fa-sun hidden dark:block"></i>
+      </button>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="font-bold text-red-600">Beranda</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="dokumentasi.html">Dokumentasi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-16 bg-gradient-to-r from-red-50 to-white">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">PMR 287 Jakarta</h1>
+        <p class="text-lg mb-6">Unit PMR sekolah yang berkomitmen membina keterampilan kepalangmerahan dan pertolongan pertama.</p>
+        <a href="event.html" class="bg-red-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-red-700 transition">Lihat Event</a>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img src="foto.jpg" alt="PMR Jakarta" class="rounded-xl shadow-xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Tentang Kami</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-6 bg-gray-50 rounded-xl shadow">
+          <h3 class="text-xl font-bold mb-3">Visi</h3>
+          <p>Menjadi wadah pembinaan anggota PMR yang aktif, terampil, dan berkarakter, dengan semangat tolong-menolong serta jiwa kepalangmerahan di lingkungan sekolah.</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-xl shadow">
+          <h3 class="text-xl font-bold mb-3">Misi</h3>
+          <ul class="list-disc pl-5">
+            <li>Mengembangkan kemampuan anggota dalam bidang kepalangmerahan, pertolongan pertama, dan kesiapsiagaan.</li>
+            <li>Menumbuhkan rasa peduli, disiplin, kerja sama, dan empati antar sesama warga sekolah.</li>
+            <li>Mengadakan kegiatan pembinaan yang rutin, terarah, dan bermanfaat bagi anggota maupun lingkungan sekolah.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Kegiatan Rutin</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <i class="fas fa-heartbeat text-4xl text-red-600 mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">KPM (Kepalangmerahan)</h3>
+          <p>Pembelajaran materi kepalangmerahan, seperti prinsip dasar PMI, tujuh prinsip, peran relawan, serta penerapannya dalam kehidupan sekolah.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <i class="fas fa-ambulance text-4xl text-red-600 mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">PP (Pertolongan Pertama)</h3>
+          <p>Latihan pertolongan pertama untuk menangani cedera ringan, keamanan dasar, dan kesiapsiagaan saat kegiatan sekolah berlangsung.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <i class="fas fa-hands-helping text-4xl text-red-600 mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Latihan Keterampilan PMR</h3>
+          <p>Mulai dari tandu, simpul tali, perawatan keluarga, hingga latihan situasional yang dibuat seperti simulasi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; PMR 287 Jakarta — Official Website.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

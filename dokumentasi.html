@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dokumentasi - PMR 287 Jakarta</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Loader -->
+  <div id="loader" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
+    <div class="animate-spin rounded-full h-12 w-12 border-t-4 border-red-600"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white shadow-md z-40">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="logo.png" class="h-10 w-10 mr-3">
+        <h1 class="text-xl font-bold text-red-600">PMR 287 Jakarta</h1>
+      </div>
+      <button id="darkModeToggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700">
+        <i class="fas fa-moon dark:hidden"></i>
+        <i class="fas fa-sun hidden dark:block"></i>
+      </button>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="dokumentasi.html" class="font-bold text-red-600">Dokumentasi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Dokumentasi -->
+  <section class="pt-24 pb-10 bg-gradient-to-r from-red-50 to-white">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold mb-4">Dokumentasi</h1>
+      <p>Dokumentasi kegiatan PMR 287 Jakarta dari masa ke masa</p>
+    </div>
+  </section>
+
+  <!-- Dokumentasi Grid -->
+  <section class="py-10">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-xl transition">
+          <img src="hr.jpg" alt="Dokumentasi 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Praktik Melintasi Medan Sulit dalam Penanganan Korban</h3>
+            <p class="text-sm text-gray-500 mb-2">Tanggal: 8 November 2025</p>
+            <p class="mb-4">Kegiatan pelatihan halang rintang untuk melatih ketangkasan dan kesiapsiagaan anggota.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-xl transition">
+          <img src="pbb.jpg" alt="Dokumentasi 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Latihan Formasi Anggota</h3>
+            <p class="text-sm text-gray-500 mb-2">Tanggal: 8 November 2025</p>
+            <p class="mb-4">Pelatihan baris-berbaris untuk meningkatkan disiplin dan kekompakan anggota PMR.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-xl transition">
+          <img src="ak.jpg" alt="Dokumentasi 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Praktik Evakuasi Korban Tanpa Alat</h3>
+            <p class="text-sm text-gray-500 mb-2">Tanggal: 4 November 2025</p>
+            <p class="mb-4">Pelatihan teknik evakuasi dan mengangkat korban dalam situasi darurat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; PMR 287 Jakarta — Official Website.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
